@@ -1,0 +1,21 @@
+syntax = "proto3";
+package usermgmt;
+
+option go_package = "Github.com/mhthrh/JWT-gRPC;usermgmt";
+
+service UserManagement {
+  rpc SignIn (Login) returns (JWT) {}
+}
+
+message Login {
+  string username = 1;
+  string password = 2;
+}
+
+message JWT {
+  string validTill = 1;
+  string signedKey = 2;
+}
+
+
+
