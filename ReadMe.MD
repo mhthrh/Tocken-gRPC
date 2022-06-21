@@ -1,16 +1,16 @@
-**JWT authenticator with gRPC**
+**Tocken authenticator with gRPC**
 ----
 
 Introduction
 ============
-Implement JWT with gRPC.
+Implement Tocken with gRPC.
 
 Golang: ver 1.18
 
 PostgresSQL: ver 14.1
 
 Main features
-- gRPC JWT (180 seconds).
+- gRPC Tocken (180 seconds).
 - Service time out support with context and channel
 - ORM connection to DB
 
